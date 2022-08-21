@@ -1,0 +1,442 @@
+/*CSS variables section*/
+:root {
+color:white;
+background:  #ECECEC;
+}
+
+/*Extra Large screens - Extra large desktops*/
+
+/*General CSS and CSS reset*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.hero{
+    height:600px;
+    background-image: url("https://www.therakyatpost.com/wp-content/uploads/2020/03/87992071_1524754387675555_4988077023600574464_o.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center ;
+    overflow: hidden;
+}
+.hero-description{
+    height: 600px;
+    background-color:rgba(4,7,32,0.7) ;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    justify-content: flex-end;
+
+    
+    
+}
+
+.dropbtn {
+  background-color: #3498DB;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #ddd}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {display:block;}
+
+.hero-text{
+    width: 60%;
+}
+.hero-text p{
+    width: 70%;
+}
+ h2 {
+    height: 150px;
+        color: black;
+    display: flex;
+    font-size: 45px;
+    text-transform: uppercase;
+    font-weight: 800;
+    align-items:center;
+
+    
+}
+.hero-header{
+
+    margin-top: 120px;
+    padding-right: 50px;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 800;
+}
+.main{
+    width: 90%;
+    margin: auto;
+}
+.about{
+
+    overflow: hidden;
+    
+}
+
+.gallery{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+
+}
+
+.about-image-1{
+    height: 600px;
+    width: 500px;
+}
+.about-image-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.about-image-2{
+display: flex;
+height: 600px;
+flex-direction: column;
+justify-content: space-between;
+    
+
+}
+.image-list{
+    height: 280px;
+    width: 500px;
+}
+.image-list img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+.poster-main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.poster-list{
+    width: 320px;
+    height: 400px;
+    position: relative;
+    margin:20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+}
+.poster-list img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.poster-text{
+    height:80px;
+    position: absolute;
+    bottom: 0;
+    overflow: hidden;
+    left:0;
+    background: transparent;
+    right: 0;
+    background:rgba(0,0,0,0.7);
+    
+    padding:20px
+    
+}
+.sponsor-main{
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    
+}
+.sponsor-image{
+    width: 15%;
+    padding: 30px;
+    margin: 10px 10px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+.sponsor-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.ticket-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.ticket-list{
+    width:300px;
+    height: 350px;
+    margin:30px;
+    background-color: #ffffcc!important;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 20px;
+    border:1px solid grey;
+    padding: 30px;
+    color: black;
+    position: relative;
+    overflow: hidden;
+}
+.ticket-header{
+    color:black;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    padding: 10px 0px;
+    
+
+}
+.ticket-icon{
+    width:80px;
+    height: 80px;
+    margin:auto;
+}
+.ticket-text{
+    margin-top: 20px;
+}
+.ticket-text li{
+    font-size: 16px;
+    
+}
+
+.ticket-icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.ticket-price{
+    color:white;
+    position: absolute;
+    top:0px;
+    left:0px;
+    padding:10px 30px;
+     font-weight: 800;
+background: black;
+
+}
+.buy-ticket-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+label{
+    font-weight: 800;
+}
+form{
+    padding-top: 25px;
+}
+.buy-ticket-image
+{
+    width:400px;
+    height: 350px;
+}
+.buy-ticket-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.buy-ticket-form{
+    color:black;
+    margin:20px;
+}
+
+input{
+    padding:10px !important;
+    margin: 10px 0px;
+    height: 40px;
+    border:1px solid ;
+    width:60%;
+}
+/*MEDIA QUERIES*/
+/*Large screens - Desktop*/
+
+@media screen and (min-width: 1500px) {
+    .hero-text{
+        width: 60%;
+        
+    }
+    .about{
+        width:90%;
+    }
+    .about-image-1{
+        width: 30%;
+        
+    }
+    .about-image-2{
+    flex-direction: row;
+    width: 70%;
+    height: 600px;
+    
+    }
+
+    .image-list{
+        height: 600px;
+        margin:auto;
+        
+
+    }
+    
+    .gallery{
+        justify-content: center;
+    
+        
+    }
+    .about{
+        width: 90%;
+        margin: auto;
+    }
+
+}
+
+/*medium screens - Laptops*/
+@media screen and (max-width: 1024px) {
+    .about-image-1{
+        width: 100%;
+        height: 500px;
+    }
+    .image-list{
+        height: 240px;
+    }
+    .about-image-2{
+        height: 500px;
+        flex-direction: row;
+        width: 100%;
+    }
+    .image-list{
+        width: 100%;
+    }
+    .gallery{
+        justify-content: space-evenly;
+    }
+    .hero-text{
+        width: 70%;
+    }
+    .hero-header{
+        font-size: 45px;
+    }
+
+}
+
+/*Small screens - tablets*/
+@media screen and (max-width: 768px) {
+    
+    .about{
+        width: 90%;
+        margin: auto;
+    }
+    .about-image-1{
+        width: 100%;
+        height: 500px;
+        margin-bottom: 10px;
+
+
+    }
+    .about-image-2{
+        height: 250px;
+    }
+    .image-list{
+        width: 49%;
+        justify-content: space-between;
+    }
+    .about-image-2{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .sponsor-image{
+        margin-bottom: 30px;
+    }
+    .hero-description{
+        justify-content: center;
+    }
+    .hero-text{
+        width:80%;
+    }
+    .hero-header{
+        font-size: 30px;
+    }
+     h2{
+        font-size: 30px;
+        height: 100px;
+    }
+    .poster-list{
+        width: 250px;
+    }
+    
+}
+
+/*Extra small screens - phones*/
+@media screen and (max-width: 480px) {
+    .gallery{
+        justify-content: center;
+    }
+    .about{
+        width:90%;
+        margin: auto;
+    }
+    .about-image-2{
+        height: 250px;
+    }
+    h2{
+        font-size: 30px;
+        height: 80px;
+    }
+    .hero-description{
+        justify-content: center;
+        align-items: center;
+    }
+    .hero-text{
+        width:90%;
+    }
+    .poster-text h3{
+        font: 16px !important;
+    }
+    h3{
+        width: 100%;
+    }
+}
