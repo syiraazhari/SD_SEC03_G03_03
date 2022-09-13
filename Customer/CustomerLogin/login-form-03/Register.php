@@ -4,7 +4,7 @@ include 'connect.php';
 if(isset($_POST['submit']))
 {
 	$name = $_POST['name'];
-	$password = $_POST['password'];
+	$password = md5($_POST['password']);
 	$email = $_POST['email'];
 	
 	$select = mysqli_query($conn, "SELECT * FROM `customer` WHERE email = '$email' AND password = '$password'") 
@@ -69,6 +69,7 @@ if(isset($_POST['submit']))
                             <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
                         </div>
                         <div class="form-group">
+                            
                             <input type="text" class="form-input" name="password" id="password" placeholder="Password"/>
                             <span toggle="#password" class="zmdi zmdi-eye field-icon toggle-password"></span>
                         </div>

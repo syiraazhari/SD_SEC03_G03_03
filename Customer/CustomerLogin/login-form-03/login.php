@@ -1,3 +1,24 @@
+<?php
+session_start();
+include 'connect.php';
+$msg = "";
+
+if (isset($_POST['submit'])){ 
+
+  $email = mysqli_real_escape_string($conn , $_POST['email']);
+  $password = mysqli_real_escape_string($conn , md5($_POST['password']));
+
+  $select = mysqli_query($conn, "SELECT * FROM `customer` WHERE email = '$email' AND password = '$password'") or die ('query failed');
+  if(mysqli_num_rows($select)> 0)
+  {
+    $row = mysqli_fetch_assoc($select);
+    $_SESSION['user_id'] = $row['id'];
+      header('location:home.php');
+    } else {
+      $msg = "Incorrect email or password";
+    }
+  }
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -34,14 +55,15 @@
               </strong></h3>
               <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
               </div>
-              <form action="#" method="post">
+              <form action="" method="post">
+                <?php echo $msg; ?>
                 <div class="form-group first">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" placeholder="Your Username" id="username">
+                  <label for="username">Email</label>
+                  <input type="text" class="form-control" placeholder="Your Email" name="email">
                 </div>
                 <div class="form-group last mb-3">
                   <label for="password">Password</label>
-                  <input type="password" class="form-control" placeholder="Your Password" id="password">
+                  <input type="password" class="form-control" placeholder="Your Password" name="password">
                 </div>
                 
                 <div class="d-sm-flex mb-5 align-items-center">
@@ -52,7 +74,7 @@
                   <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
                 </div>
 
-                <input type="submit" value="Log In" class="btn btn-block btn-primary">
+                <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
 
               </form>
             </div>
