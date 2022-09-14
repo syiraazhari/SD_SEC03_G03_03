@@ -1,5 +1,8 @@
+<?php
+session_start();
+include 'connect.php';
 
-<!---ddd-->
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +10,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yummy Bootstrap Template - Index</title>
+  <title>Zoo Negara</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -58,12 +61,14 @@
           <li><a href="#events">Events</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="profile.php">Profile</a></li>
+          
         </ul>
       </nav><!-- .navbar -->
 	  
-	<a class="btn-book-a-table" href="#book-a-table">Book a Ticket</a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+	
+      
+   
 	  
 
 
@@ -797,8 +802,15 @@
         </form>
         <!--End Contact Form -->
 
+
+
       </div>
     </section><!-- End Contact Section -->
+
+  <section id="profile" class="profile"><!-- Profile Section -->
+    <button type="submit">test</button>
+    <h1>eizam gay</h1>
+
 
   </main><!-- End #main -->
 

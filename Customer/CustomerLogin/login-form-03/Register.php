@@ -1,10 +1,80 @@
 <?php
 
 include 'connect.php';
+
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'vendor/autoload.php';
+
+if(isset($_POST['signup'])){
+    $password = $_POST['password'];
+    $email = $_POST['email'];
+    $name = $_POST['name'];
+
+    //Instantiation and passing `true` enables exceptions
+    $mail = new PHPMailer(true);
+
+    try {
+        //Enable verbose debug output
+        $mail->SMTPDebug = 0;//SMTP::DEBUG_SERVER;
+
+        //Send using SMTP
+        $mail->isSMTP();
+
+        //Set the SMTP server to send through
+        $mail->Host = 'smtp.gmail.com';
+
+        //Enable SMTP authentication
+        $mail->SMTPAuth = true;
+
+        //SMTP username
+        $mail->Username = 'group03sd@gmail.com';
+
+        //SMTP password
+        $mail->Password = 'rdlxgypsqdxsfrrf';
+
+        //Enable TLS encryption;
+        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+
+        //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+        $mail->Port = 587;
+
+        //Recipients
+        $mail->setFrom('group03sd@gmail.com', 'Zoo Negara');
+
+        //Add a recipient
+        $mail->addAddress($email, $name);
+
+        //Set email format to HTML
+        $mail->isHTML(true);
+
+        $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
+
+        $mail->Subject = 'Email verification';
+        $mail->Body    = '<p>Your verification code is: <b style="font-size: 30px;">' . $verification_code . '</b></p>';
+
+        $mail->send();
+        // echo 'Message has been sent';
+
+
+        $sql = "INSERT INTO user (name, username, password, email, verification_code) VALUES ('$name', '$password', '$email', '$verification_code')";
+        
+        if ($conn->query($sql)===true){
+            header("location:email-verification.php");
+        } else{
+            die(mysqli_error($conn));
+        }
+
+    }catch (Exception $e){
+        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+    }
+}
 if(isset($_POST['submit']))
 {
 	$name = $_POST['name'];
-	$password = md5($_POST['password']);
+	$password = $_POST['password'];
 	$email = $_POST['email'];
 	
 	$select = mysqli_query($conn, "SELECT * FROM `customer` WHERE email = '$email' AND password = '$password'") 
