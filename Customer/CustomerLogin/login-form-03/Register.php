@@ -9,9 +9,9 @@ use PHPMailer\PHPMailer\SMTP;
 require 'vendor/autoload.php';
 
 if(isset($_POST['signup'])){
-    $password = $_POST['password'];
-    $email = $_POST['email'];
-    $name = $_POST['name'];
+    $email = mysqli_real_escape_string($conn , $_POST['email']);
+    $password = mysqli_real_escape_string($conn , md5($_POST['password']));
+    $name = mysqli_real_escape_string($conn , $_POST['name']);
 
     //Instantiation and passing `true` enables exceptions
     $mail = new PHPMailer(true);
@@ -74,7 +74,7 @@ if(isset($_POST['signup'])){
 if(isset($_POST['submit']))
 {
 	$name = $_POST['name'];
-	$password = $_POST['password'];
+	$password = md5($_POST['password']);
 	$email = $_POST['email'];
 	
 	$select = mysqli_query($conn, "SELECT * FROM `customer` WHERE email = '$email' AND password = '$password'") 
@@ -114,7 +114,7 @@ if(isset($_POST['submit']))
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign Up Form by Colorlib</title>
+    <title>Sign Up Form</title>
 
     <!-- Font Icon -->
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -151,11 +151,10 @@ if(isset($_POST['submit']))
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                         </div>
                         <div class="form-group">
-                            <input type="submit" name="submit" id="submit" class="form-submit" value="Sign up"/>
+                            <input type="submit" name="submit"  class="form-submit" value="Sign up"/>
                         </div>
                     </form>
                     <p class="loginhere">
-<<<<<<< HEAD
                         Have already an account ? <a href=C:\Users\HP\Desktop\projeksd\Guest\GuestLogin\login-form-03\loginindex.html class="loginhere-link">Login here</a>
 
                     </p>

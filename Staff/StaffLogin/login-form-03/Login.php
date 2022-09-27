@@ -68,7 +68,7 @@ if (isset($_POST['submit'])){
                 
                 <div class="d-sm-flex mb-5 align-items-center">
                  
-                    <div class="control__indicator"></div>
+                  
                   </label>
                   <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
                 </div>

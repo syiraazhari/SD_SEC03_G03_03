@@ -12,18 +12,18 @@ if(isset($_GET['logout'])){
   unset($_SESSION['id']);
   header("location: login.php");
 }
+
 if (isset($_POST['update'])){
 
   $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
   $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
-  $update_password = mysqli_real_escape_string($conn, $_POST['update_password']);
+  $update_password = mysqli_real_escape_string($conn, md5($_POST['update_password']));
 
   mysqli_query($conn, "UPDATE `customer` SET name = '$update_name', email = '$update_email', password = $update_password WHERE id = '$id'")
   or die("Query FAILED");
 
 
 }
-
 ?>
 
 
@@ -75,27 +75,28 @@ if (isset($_POST['update'])){
               <form action="" method="post">
 			    <div class="form-group first">
                   <label for="username">Name:</label>
-                  <input type="text" name="update_name" value ="<?php echo $fetch['name']; ?>" class="box">
+                  <?php echo $fetch['name']; ?>
                   
                 </div>
                 
                 <div class="form-group last mb-3">
                   <label for="password">Email:</label>
-                  <input type="text" name="update_email" value ="<?php echo $fetch['email']; ?>" class="box">
+                  <?php echo $fetch['email']; ?>
                  
                 </div>
 
                 <div class="form-group last mb-3">
-                  <label for="password">Password:</label>
-                  <input type="password" name="update_password" value ="<?php echo $fetch['password']; ?>" class="box">
+                Password:<input type="password"
+                value =  <?php echo $fetch['password']; ?>>
                  
                 </div>
+                
 
                 <span class="ml-auto">
                  
                 
                 <div class="d-sm-flex mb-5 align-items-center">
-                  <input type="submit" name= "update" value="Update" class="ml-auto"/>
+                <a href="editprofile.php"class="d-sm-flex mb-5 align-items-center" >Edit Profile</a>
                 </div>
 
                

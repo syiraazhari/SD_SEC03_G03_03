@@ -16,17 +16,15 @@ if(isset($_GET['logout'])){
 if (isset($_POST['update'])){
 
   $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
-  $update_username =  mysqli_real_escape_string($conn, $_POST['update_username']);
   $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
+  $update_username = mysqli_real_escape_string($conn, $_POST['update_username']);
   $update_password = mysqli_real_escape_string($conn, $_POST['update_password']);
 
-  mysqli_query($conn, "UPDATE `staff` SET name = '$update_name',username = '$update_username', email = '$update_email', password = $update_password WHERE id = '$id'")
+  mysqli_query($conn, "UPDATE `staff` SET name = '$update_name', email = '$update_email', username = '$update_username', password = $update_password WHERE id = '$id'")
   or die("Query FAILED");
 
 
 }
-
-
 ?>
 
 
@@ -78,31 +76,32 @@ if (isset($_POST['update'])){
               <form action="" method="post">
 			    <div class="form-group first">
                   <label for="username">Name:</label>
-                  <input type="text" name="update_name" value ="<?php echo $fetch['name']; ?>" class="box">
+                  <?php echo $fetch['name']; ?>
                   
                 </div>
                 <div class="form-group first">
                   <label for="username">Username:</label>
-                  <input type="text" name="update_username" value ="<?php echo $fetch['username']; ?>" class="box">
+                  <?php echo $fetch['username']; ?>
                   
                 </div>
                 <div class="form-group last mb-3">
                   <label for="password">Email:</label>
-                  <input type="text" name="update_email" value ="<?php echo $fetch['email']; ?>" class="box">
+                  <?php echo $fetch['email']; ?>
                  
                 </div>
 
                 <div class="form-group last mb-3">
-                  <label for="password">Password:</label>
-                  <input type="password" name="update_password" value ="<?php echo $fetch['password']; ?>" class="box">
+                Password:<input type="password"
+                value =  <?php echo $fetch['password']; ?>>
                  
                 </div>
+                
 
                 <span class="ml-auto">
                  
                 
                 <div class="d-sm-flex mb-5 align-items-center">
-                  <input type="submit" name= "update" value="Update" class="ml-auto"/>
+                <a href="editprofile.php"class="d-sm-flex mb-5 align-items-center" >Edit Profile</a>
                 </div>
 
                
