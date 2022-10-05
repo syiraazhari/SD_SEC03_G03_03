@@ -48,7 +48,7 @@ if (isset($_POST['save'])){
 
     <title> Edit Profile Page</title>
   </head>
-  <body>
+  <body style=background-color:#C3E79B>
   
 
   <div class="half">

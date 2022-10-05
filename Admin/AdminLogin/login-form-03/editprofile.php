@@ -18,9 +18,9 @@ if (isset($_POST['save'])){
   $update_name = mysqli_real_escape_string($conn, $_POST['update_name']);
   $update_email = mysqli_real_escape_string($conn, $_POST['update_email']);
   $update_username = mysqli_real_escape_string($conn, $_POST['update_username']);
-  $update_password = mysqli_real_escape_string($conn, $_POST['update_password']);
+  $update_password = mysqli_real_escape_string($conn, md5($_POST['update_password']));
 
-  mysqli_query($conn, "UPDATE `admin` SET name = '$update_name', email = '$update_email', username = '$update_username', password = $update_password WHERE id = '$id'")
+  mysqli_query($conn, "UPDATE `admin` SET name = '$update_name', email = '$update_email', username = '$update_username', password = '$update_password' WHERE id = '$id'")
   or die("Query FAILED");
 
 
