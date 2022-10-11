@@ -56,11 +56,12 @@ include 'connect.php';
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Animals</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="MeetOurFamily.html">Meet Our Family</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="things.html">Things To Do</a></li>
+          <li><a href="plan.html">Plan Your Visit</a></li>
+          <li><a href="get.html">Get Involve</a></li>
           <li><a href="profile.php">Profile</a></li>
           
         </ul>
