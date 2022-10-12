@@ -12,99 +12,78 @@ if(isset($_POST['signup'])){
     $email = mysqli_real_escape_string($conn , $_POST['email']);
     $password = mysqli_real_escape_string($conn , md5($_POST['password']));
     $name = mysqli_real_escape_string($conn , $_POST['name']);
+    $cpass = mysqli_real_escape_string($conn , md5($_POST['cpassword']));
+    $code = mysqli_real_escape_string($conn , md5(rand()));
+    
 
-    //Instantiation and passing `true` enables exceptions
-    $mail = new PHPMailer(true);
+    $select = mysqli_query($conn, "SELECT * FROM `customer` WHERE email = '$email' AND password = '$password'") or die ('query failed');
 
-    try {
-        //Enable verbose debug output
-        $mail->SMTPDebug = 0;//SMTP::DEBUG_SERVER;
+    if(mysqli_num_rows(mysqli_query($conn, "SELECT * FROM customer WHERE email = '{$email}'"))> 0){
+        $msg = 'Email Already Exist';
+    }else{
+        if($pass != $cpass){
+            $msg = 'Password and confirm password do not match';
+        }else{
+        $insert = mysqli_query($conn, "INSERT INTO `customer`(name,email,password,code,date)
+        VALUES('$name','$email','$pass','$code')") or die ('query failed');
 
-        //Send using SMTP
-        $mail->isSMTP();
+        if($insert){
+        echo "<div style = 'display: none;'>";
+        $mail = new PHPMailer(true);
 
-        //Set the SMTP server to send through
-        $mail->Host = 'smtp.gmail.com';
+        try {
+            //Enable verbose debug output
+            $mail->SMTPDebug = 0;//SMTP::DEBUG_SERVER;
 
-        //Enable SMTP authentication
-        $mail->SMTPAuth = true;
-
-        //SMTP username
-        $mail->Username = 'group03sd@gmail.com';
-
-        //SMTP password
-        $mail->Password = 'rdlxgypsqdxsfrrf';
-
-        //Enable TLS encryption;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-
-        //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-        $mail->Port = 587;
-
-        //Recipients
-        $mail->setFrom('group03sd@gmail.com', 'Zoo Negara');
-
-        //Add a recipient
-        $mail->addAddress($email, $name);
-
-        //Set email format to HTML
-        $mail->isHTML(true);
-
-        $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
-
-        $mail->Subject = 'Email verification';
-        $mail->Body    = '<p>Your verification code is: <b style="font-size: 30px;">' . $verification_code . '</b></p>';
-
-        $mail->send();
-        // echo 'Message has been sent';
-
-
-        $sql = "INSERT INTO user (name, username, password, email, verification_code) VALUES ('$name', '$password', '$email', '$verification_code')";
-        
-        if ($conn->query($sql)===true){
-            header("location:email-verification.php");
-        } else{
-            die(mysqli_error($conn));
+            //Send using SMTP
+            $mail->isSMTP();
+    
+            //Set the SMTP server to send through
+            $mail->Host = 'smtp.gmail.com';
+    
+            //Enable SMTP authentication
+            $mail->SMTPAuth = true;
+    
+            //SMTP username
+            $mail->Username = 'group03sd@gmail.com';
+    
+            //SMTP password
+            $mail->Password = 'rdlxgypsqdxsfrrf';
+    
+            //Enable TLS encryption;
+            $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    
+            //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
+            $mail->Port = 587;
+    
+            //Recipients
+            $mail->setFrom('group03sd@gmail.com', 'Zoo Negara');
+    
+            //Add a recipient
+            $mail->addAddress($email, $name);
+    
+            //Set email format to HTML
+            $mail->isHTML(true);
+            $mail->Subject = 'no-reply';
+            $mail->Body    = 'Here is the verification link <b><a href="http://localhost/masTer PROJECT SD/customer/login.php?verification='.$code.'">"http://localhost/masTer PROJECT SD/customer/login.php?verification='.$code.'</a></b>';
+            
+            $mail -> send();
+            echo 'Message has been sent';
+        }catch (Exception $e){
+            echo "Message could not be set. Mailer Error:{$mail -> ErrorInfo}";
         }
-
-    }catch (Exception $e){
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "</div>";
+        $msg = "<div class =  'alert alert-info'>We've sent a verification link on your email address.</div>";
+        }else{
+            $msg = 'Registration failed!';
+        }
+    
+    }   
     }
+
 }
-if(isset($_POST['submit']))
-{
-	$name = $_POST['name'];
-	$password = md5($_POST['password']);
-	$email = $_POST['email'];
-	
-	$select = mysqli_query($conn, "SELECT * FROM `customer` WHERE email = '$email' AND password = '$password'") 
-    or die('query failed');
-	
-	$sql = "insert into customer (name,password,email)
-			values ('$name','$password','$email')";
-			
-	$result = mysqli_query($conn,$sql);
-	
-	if($result)
-	{
-		
-		 //echo "Data inserted succesfull.";
-		header('location:login.php');
-		
-		
-	}
-	else{
-		
-		die(mysqli_error($con));
-	}
-			
+        
 
- 
-	
-	
-			
-
- }
  
  ?>
 
