@@ -2,16 +2,6 @@
 session_start();
 include 'connect.php';
 $msg = "";
-$id = $_SESSION['user_id'];
-if(!isset($_SESSION['user_id'])){
-  $_SESSION['msg'] = "You must login first";
-  header("location: login.php");
-}
-if(isset($_GET['logout'])){
-  session_destroy();
-  unset($_SESSION['id']);
-  header("location: login.php");
-}
 
 if (isset($_POST['save'])){
 
@@ -45,7 +35,7 @@ if (isset($_POST['save'])){
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>Forgot Password Page</title>
+    <title>Veriication Sent!</title>
   </head>
   <body style=background-color:#C3E79B>
   
@@ -65,11 +55,7 @@ if (isset($_POST['save'])){
               </div>
               <?php
 
-              $select = mysqli_query($conn, "SELECT * FROM `customer` WHERE  id = '$id'")or die('query failed');
-              if(mysqli_num_rows($select)>0){
-                $fetch = mysqli_fetch_assoc($select);
-
-              }
+              
 
               ?>
               

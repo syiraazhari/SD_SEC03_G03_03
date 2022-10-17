@@ -3,6 +3,12 @@ session_start();
 include 'connect.php';
 $msg = "";
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'vendor/autoload.php';
+
 if (isset($_POST['submit'])){ 
 
   $email = mysqli_real_escape_string($conn , $_POST['email']);
@@ -18,6 +24,15 @@ if (isset($_POST['submit'])){
       $msg = "Incorrect email or password";
     }
   }
+
+  if (isset($_POST['forgot'])){ 
+
+
+        header('location:forgotEmail.php');
+
+    }
+ 
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -57,7 +72,7 @@ if (isset($_POST['submit'])){
               <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
               </div>
               <form action="" method="post">
-                <?php echo $msg; ?>
+                
                 <div class="form-group first">
                   <label for="username">Email</label>
                   <input type="text" class="form-control" placeholder="Your Email" name="email">
@@ -71,9 +86,10 @@ if (isset($_POST['submit'])){
 
                 
                 </label>
-                <span class="ml-auto"><a href="forgot.php" class="forgot-pass">Forgot Password</a></span> 
+                <span class="ml-auto"><input type="submit" name="forgot" value="Forgot Password" class="forgot-pass"></a></span> 
                 </div>
 
+                
                 <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
 
               </form>

@@ -48,10 +48,10 @@ if (isset($_POST['update'])){
 
     <title>Profile Page</title>
   </head>
-  <body>
+  <body style="background-color:#C3E79B">
   
 
-  <div class="half">
+  <div class="half" style="background-color:#C3E79B">
     <div class="bg order-1 order-md-2" style="background-image: url('back.jpg')";></div>
     <div class="contents order-2 order-md-1">
 
