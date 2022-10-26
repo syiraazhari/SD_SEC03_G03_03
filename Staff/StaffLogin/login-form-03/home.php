@@ -63,6 +63,7 @@ include 'connect.php';
           <li><a href="#contact">Contact</a></li>
           <li><a href="profile.php">Profile</a></li>
           
+          
         </ul>
       </nav><!-- .navbar -->
 	  

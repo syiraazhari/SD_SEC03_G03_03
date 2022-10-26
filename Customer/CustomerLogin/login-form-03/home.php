@@ -76,24 +76,7 @@ include 'connect.php';
     </div>
   </header><!-- End Header -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="hero d-flex align-items-center section-bg">
-    <div class="container">
-      <div class="row justify-content-between gy-5">
-        <div class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start">
-          <h2 data-aos="fade-up">Welcome to Zoo Negara</h2>
-          <p data-aos="fade-up" data-aos-delay="100">Zoo Negara Malaysia is managed by the Malaysian Zoological Society, a non-governmental organization established to create the first local zoo for Malaysians. Zoo Negara was officially opened on 14th November 1963 and has matured into a well-known zoo all around the world.</p>
-          <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#book-a-table" class="btn-book-a-table">Book a Ticket</a>
-            <a href="https://www.youtube.com/watch?v=7x8qRnYo56g&ab_channel=Manaweblife" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
-        </div>
-        <div class="col-lg-5 order-1 order-lg-2 text-center text-lg-start">
-          <img src="assets/img/hero-img.jpg" class="img-fluid" alt="" data-aos="zoom-out" data-aos-delay="300">
-        </div>
-      </div>
-    </div>
-  </section><!-- End Hero Section -->
+9
 
   <main id="main">
 
