@@ -61,6 +61,7 @@ include 'connect.php';
           <li><a href="#events">Events</a></li>
           <li><a href="#gallery">Gallery</a></li>
           <li><a href="#contact">Contact</a></li>
+          <li><a href="Staff.php">View Staff</a></li>
           <li><a href="profile.php">Profile</a></li>
           
         </ul>
