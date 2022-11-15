@@ -1,3 +1,7 @@
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -50,14 +54,16 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="home.php">Home</a></li>
+        <li><a href="#hero">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="MeetOurFamily.html">Meet Our Family</a></li>
           <li><a href="Events.html">Events</a></li>
           <li><a href="things.html">Things To Do</a></li>
-          <li><a href="plan.html">Plan Your Visit</a></li>
-          <li><a href="get.html">Get Involve</a></li>
+          <li><a href="plan.html">Donation History</a></li>
+          <li><a href="get.html">Volunteer List</a></li>
+          <li><a href="Staff.php">View Staff</a></li>
           <li><a href="profile.php">Profile</a></li>
+          
           
         </ul>
       </nav><!-- .navbar -->
@@ -79,36 +85,60 @@
 
         <div class="section-header">
           <h2>About Us</h2>
-          <p>Learn <span>About Zoo Negara</span></p>
+          <p>Staff<span>List</span></p>
         </div>
 
-        <div class="row gy-4">
-          <div class="col-lg-7 position-relative about-img" style="background-image: url(assets/img/about.jpg) ;" data-aos="fade-up" data-aos-delay="150">
-            <div class="call-us position-absolute">
-              <h4>Book a Ticket</h4>
-              <p>+03-4108 3422</p>
-            </div>
-          </div>
-          <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
-              <p class="fst-italic">
-                Zoo Negara covers 110 acres of land which is situated only 5km from the city of Kuala Lumpur. Over the years, the zoo has transformed itself to an open concept zoo with over 90% of its animals being kept in spacious exhibits with landscape befitting its nature. We are working in making sure that the old zoo concept is changed entirely.
-              </p>
-              <ul>
-                <li><i class="bi bi-check2-all"></i> We have a total of over 5137 specimen from 476 species of mammals, birds, reptiles, amphibians and fish.</li>
-                <li><i class="bi bi-check2-all"></i> To be one of the world’s premier zoological park and aquaria dedicated to conservation, recreation, education, training and research of various animal and plant species.</li>
-              </ul>
-           
+    <table class = "table">
+    <thead>
 
-              <div class="position-relative mt-4">
-                <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
-                <a href="https://www.youtube.com/watch?v=RSWHGcC-6nE&ab_channel=ZooNegaraMalaysia" class="glightbox play-btn"></a>
-              </div>
-            </div>
-          </div>
-        </div>
+    <tr>
+        <th scope="col">ID</TH>
+        <th scope="col">Username</TH>
+        <th scope="col">Name</TH>
+        <th scope="col">Password</TH>
+        <th scope="col">Email</TH>
 
-      </div>
+</tr>
+</thead>
+<tbody>
+
+<?php
+session_start();
+include 'connect.php';
+$sql = "select * from staff";
+$result = mysqli_query($conn, $sql);
+
+if($result){
+
+while($row=mysqli_fetch_assoc($result))
+{
+
+    $id=$row['id'];
+    $username=$row['username'];
+    $name=$row['name'];
+    $password=$row['password'];
+    $email=$row['email'];
+
+    echo '<tr>
+
+    <th scope="row">'.$id.'</th>
+    <td>'.$username.'</td>
+   
+    <td>'.$name.'</td>
+    <td>'.$password.'</td>
+    <td>'.$email.'</td>
+
+    <td>
+    <button class="btn btn-danger"><a href="addstaff.php" class="text-light">Add</button>
+
+    <button class="btn btn-primary"><a href="updatestaff.php?updateid='.$id.'" class="text-light">Update</button>
+    <button class="btn btn-danger"><a href="deletestaff.php?deleteid='.$id.'" class="text-light">Delete</button>
+    </td>
+    </tr>';
+    
+}
+}
+?>
     </section><!-- End About Section -->
     
 

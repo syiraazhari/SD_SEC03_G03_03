@@ -91,6 +91,8 @@ if (isset($_POST['save'])){
 
 
                 <input type="submit" name ="save" value="Save" class="btn btn-block btn-primary">
+                <br>
+                <a href="home.php"class="d-sm-flex mb-5 align-items-center" >Back to Home</a>
 
               </form>
             </div>

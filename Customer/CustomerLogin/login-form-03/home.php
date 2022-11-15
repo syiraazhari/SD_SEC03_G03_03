@@ -1,7 +1,30 @@
 <?php
-session_start();
+
 include 'connect.php';
 
+if (isset($_POST['submitt'])){
+
+  $name = $_POST['name'];
+$age = $_POST['age'];
+$ic = $_POST['ic'];
+
+$sql = "insert into volunteer (name, age, ic)
+          values('$name', '$age' , '$ic')";
+
+  $result = mysqli_query($conn, $sql);
+
+  if ($result)
+  {
+     
+      echo '<script>alert("You application has been submitted!")</script>';
+
+  }
+  else 
+  {
+      die(mysqli_error($conn));
+
+  }
+}
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -55,8 +78,10 @@ include 'connect.php';
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-<<<<<<< Updated upstream
+         
+
+          <li><a href="home.php">Home</a></li>
+
           <li><a href="About.html">About</a></li>
           <li><a href="MeetOurFamily.html">Meet Our Family</a></li>
           <li><a href="Events.html">Events</a></li>
@@ -64,14 +89,8 @@ include 'connect.php';
           <li><a href="plan.html">Plan Your Visit</a></li>
           <li><a href="get.html">Get Involve</a></li>
           <li><a href="profile.php">Profile</a></li>
+          <li><a href="register.php">Register</a></li>
           
-=======
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Animals</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
->>>>>>> Stashed changes
         </ul>
       </nav><!-- .navbar -->
 	  
@@ -93,6 +112,7 @@ include 'connect.php';
     </div>
   </header><!-- End Header -->
 
+
   <!-- ======= Hero Section ======= -->
   <section id="hero" class="hero d-flex align-items-center section-bg">
     <div class="container">
@@ -111,6 +131,8 @@ include 'connect.php';
       </div>
     </div>
   </section><!-- End Hero Section -->
+
+  <main id="main">
 
   <main id="main">
 
@@ -678,27 +700,28 @@ include 'connect.php';
 
         </div>
 
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
+        <div class="section-header">
+          <br><br>
+          <h2>Volunteer Form</h2>
+          <p>Be a volunteer!</p>
+        </div>
+
+
+        <form action="#" method="post" role="form" class="php-email-form p-3 p-md-4">
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="text" class="form-control" name="age" id="age" placeholder="Your Age" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="ic" id="ic" placeholder="Your IC number" required>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><input type="submit" name ="submitt" value="Submit your application" class="btn btn-block btn-primary"></div>
+
+          
         </form>
         <!--End Contact Form -->
 

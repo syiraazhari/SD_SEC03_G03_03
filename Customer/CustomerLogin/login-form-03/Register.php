@@ -6,13 +6,6 @@ use PHPMailer\PHPMailer\SMTP;
 
 require 'vendor/autoload.php';
 
-<<<<<<< Updated upstream
-if(isset($_POST['submit'])){
-    $email = mysqli_real_escape_string($conn , $_POST['email']);
-    $password = mysqli_real_escape_string($conn , md5($_POST['password']));
-    $name = mysqli_real_escape_string($conn , $_POST['name']);
-    
-=======
 $mail = new PHPMailer(true);
 
 include 'connect.php';
@@ -25,51 +18,10 @@ if (isset($_POST['submit'])){
     $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
     $sql = "INSERT INTO customer (name, password, email, verification_code) VALUES ('$name', '$password', '$email', ' $verification_code ')";
     $insert = mysqli_query($conn, $sql);
->>>>>>> Stashed changes
 
     
 
     try {
-<<<<<<< Updated upstream
-        //Enable verbose debug output
-        $mail->SMTPDebug = 0;//SMTP::DEBUG_SERVER;
-
-        //Send using SMTP
-        $mail->isSMTP();
-
-        //Set the SMTP server to send through
-        $mail->Host = 'smtp.gmail.com';
-
-        //Enable SMTP authentication
-        $mail->SMTPAuth = true;
-
-        //SMTP username
-        $mail->Username = 'group03sd@gmail.com';
-
-        //SMTP password
-        $mail->Password = 'rdlxgypsqdxsfrrf';
-
-        //Enable TLS encryption;
-        $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
-
-        //TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
-        $mail->Port = 587;
-
-        //Recipients
-        $mail->setFrom('group03sd@gmail.com', 'Zoo Negara');
-
-        //Add a recipient
-        $mail->addAddress($email, $name);
-
-        //Set email format to HTML
-        $mail->isHTML(true);
-
-        $verification_code = substr(number_format(time() * rand(), 0, '', ''), 0, 6);
-
-        $mail->Subject = 'Email verification';
-        $mail->Body    = '<p>Your verification link is: <b style="font-size: 10px;"> http://localhost/master%20project%20sd/Customer/CustomerLogin/login-form-03/login.php</b></p>';
-
-=======
         $mail->SMTPDebug = 0;									
         $mail->isSMTP();											
         $mail->Host	 = 'smtp.gmail.com';					
@@ -88,25 +40,14 @@ if (isset($_POST['submit'])){
         $mail->Subject = 'Email Verification';
         $mail->Body    = '<p>Your verification code is: <b style="font-size: 30px;">' . $verification_code . '</b></p>';
         
->>>>>>> Stashed changes
         $mail->send();
         echo "Mail has been sent successfully!";
 
         
 
-<<<<<<< Updated upstream
-        $sql = "INSERT INTO customer (name, password, email) VALUES ('$name', '$password', '$email')";
-        
-        if ($conn->query($sql)===true){
-            header("location:send.php");
-        } else{
-            die(mysqli_error($conn));
-        }
-=======
         
 		
         
->>>>>>> Stashed changes
 
 
 
@@ -115,17 +56,8 @@ if (isset($_POST['submit'])){
     }
 
 }
-<<<<<<< Updated upstream
-
-=======
->>>>>>> Stashed changes
 
 
-<<<<<<< Updated upstream
- 
- 
-=======
->>>>>>> Stashed changes
  ?>
 
 <!DOCTYPE html>
@@ -134,11 +66,7 @@ if (isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<<<<<<< Updated upstream
-    <title>Sign Up Form</title>
-=======
     <title>Account Registration</title>
->>>>>>> Stashed changes
 
     <!-- Font Icon -->
    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
@@ -182,11 +110,7 @@ if (isset($_POST['submit'])){
                             <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree all statements in  <a href="#" class="term-service">Terms of service</a></label>
                         </div>
                         <div class="form-group">
-<<<<<<< Updated upstream
-                            <input type="submit" name="submit"  class="form-submit" value="Sign up"/>
-=======
                             <input type="submit" name="submit" id="signup" class="form-submit" value="Sign up"/>
->>>>>>> Stashed changes
                         </div>
                     </form>
                     <p class="loginhere">
