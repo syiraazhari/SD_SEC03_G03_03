@@ -54,14 +54,16 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
+        <li><a href="#hero">Home</a></li>
           <li><a href="About.html">About</a></li>
           <li><a href="MeetOurFamily.html">Meet Our Family</a></li>
           <li><a href="Events.html">Events</a></li>
           <li><a href="things.html">Things To Do</a></li>
-          <li><a href="plan.html">Plan Your Visit</a></li>
-          <li><a href="get.html">Get Involve</a></li>
+          <li><a href="plan.html">Donation History</a></li>
+          <li><a href="get.html">Volunteer List</a></li>
+          <li><a href="Staff.php">View Staff</a></li>
           <li><a href="profile.php">Profile</a></li>
+          
           
         </ul>
       </nav><!-- .navbar -->
@@ -129,8 +131,8 @@ while($row=mysqli_fetch_assoc($result))
     <td>
     <button class="btn btn-danger"><a href="addstaff.php" class="text-light">Add</button>
 
-    <button class="btn btn-primary"><a href="delete.php" class="text-light">Update</button>
-    <button class="btn btn-danger"><a href="delete.php" class="text-light">Delete</button>
+    <button class="btn btn-primary"><a href="updatestaff.php?updateid='.$id.'" class="text-light">Update</button>
+    <button class="btn btn-danger"><a href="deletestaff.php?deleteid='.$id.'" class="text-light">Delete</button>
     </td>
     </tr>';
     

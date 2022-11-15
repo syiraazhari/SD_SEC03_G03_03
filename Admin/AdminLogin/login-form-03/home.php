@@ -55,12 +55,13 @@ include 'connect.php';
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#menu">Animals</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <li><a href="#hero">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="MeetOurFamily.html">Meet Our Family</a></li>
+          <li><a href="Events.html">Events</a></li>
+          <li><a href="things.html">Things To Do</a></li>
+          <li><a href="plan.html">Donation History</a></li>
+          <li><a href="get.html">Volunteer List</a></li>
           <li><a href="Staff.php">View Staff</a></li>
           <li><a href="profile.php">Profile</a></li>
           
@@ -779,27 +780,33 @@ include 'connect.php';
 
         </div>
 
+        <div class="section-header">
+          <br><br>
+          <h2>Volunteer Form</h2>
+          <p>Be a volunteer!</p>
+        </div>
+
+
         <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
           <div class="row">
             <div class="col-xl-6 form-group">
               <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
             </div>
             <div class="col-xl-6 form-group">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+              <input type="text" class="form-control" name="age" id="age" placeholder="Your Age" required>
             </div>
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+            <input type="text" class="form-control" name="ic" id="ic" placeholder="Your IC number" required>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-          </div>
+         
           <div class="my-3">
             <div class="loading">Loading</div>
             <div class="error-message"></div>
-            <div class="sent-message">Your message has been sent. Thank you!</div>
+            <div class="sent-message">Your application has been sent. Thank you!</div>
           </div>
-          <div class="text-center"><button type="submit">Send Message</button></div>
+          <div class="text-center"><button type="submit">Send Application</button></div>
+          
         </form>
         <!--End Contact Form -->
 
@@ -809,8 +816,7 @@ include 'connect.php';
     </section><!-- End Contact Section -->
 
   <section id="profile" class="profile"><!-- Profile Section -->
-    <button type="submit">test</button>
-    <h1>eizam gay</h1>
+    
 
 
   </main><!-- End #main -->
