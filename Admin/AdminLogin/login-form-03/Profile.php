@@ -103,6 +103,11 @@ if (isset($_POST['update'])){
                 <div class="d-sm-flex mb-5 align-items-center">
                 <a href="editprofile.php"class="d-sm-flex mb-5 align-items-center" >Edit Profile</a>
                 </div>
+                <a href="Ticketsales.html"class="btn btn-block btn-primary" >View Ticket Sales</a>
+                 
+               
+
+
 
                
 
