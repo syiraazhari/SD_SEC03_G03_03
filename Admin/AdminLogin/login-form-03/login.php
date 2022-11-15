@@ -3,21 +3,36 @@ session_start();
 include 'connect.php';
 $msg = "";
 
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
+use PHPMailer\PHPMailer\SMTP;
+
+require 'vendor/autoload.php';
+
 if (isset($_POST['submit'])){ 
 
-  $username = mysqli_real_escape_string($conn , $_POST['username']);
-  $password = mysqli_real_escape_string($conn , $_POST['password']);
+  $email = mysqli_real_escape_string($conn , $_POST['email']);
+  $password = mysqli_real_escape_string($conn , md5($_POST['password']));
 
-  $select = mysqli_query($conn, "SELECT * FROM `admin` WHERE username = '$username' AND password = '$password'") or die ('query failed');
+  $select = mysqli_query($conn, "SELECT * FROM `admin` WHERE email = '$email' AND password = '$password'") or die ('query failed');
   if(mysqli_num_rows($select)> 0)
   {
     $row = mysqli_fetch_assoc($select);
     $_SESSION['user_id'] = $row['id'];
       header('location:home.php');
     } else {
-      $msg = "Incorrect username or password";
+      $msg = "Incorrect email or password";
     }
   }
+
+  if (isset($_POST['forgot'])){ 
+
+
+        header('location:forgotEmail.php');
+
+    }
+ 
+
 ?>
 <!doctype html>
 <html lang="en">
@@ -35,15 +50,16 @@ if (isset($_POST['submit'])){
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
     <!-- Style -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/loginstyle.css">
 
-    <title>Login #3</title>
+    <title>Login</title>
   </head>
-  <body>
+  <body style="background-image: url('http://3.bp.blogspot.com/-FXxGHxdYb50/VSqK_S9PtXI/AAAAAAAABjs/2LdS6IQy1g4/s1600/P1040387%2B-%2BCopy.JPG')";>
   
 
   <div class="half">
-    <div class="bg order-1 order-md-2" style="background-image: url('http://3.bp.blogspot.com/-FXxGHxdYb50/VSqK_S9PtXI/AAAAAAAABjs/2LdS6IQy1g4/s1600/P1040387%2B-%2BCopy.JPG');"></div>
+    <div class="bg order-1 order-md-2" style="background-image: url('http://3.bp.blogspot.com/-FXxGHxdYb50/VSqK_S9PtXI/AAAAAAAABjs/2LdS6IQy1g4/s1600/P1040387%2B-%2BCopy.JPG');">
+  </div>
     <div class="contents order-2 order-md-1">
 
       <div class="container">
@@ -56,10 +72,10 @@ if (isset($_POST['submit'])){
               <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
               </div>
               <form action="" method="post">
-                <?php echo $msg; ?>
+                
                 <div class="form-group first">
-                  <label for="username">Username</label>
-                  <input type="text" class="form-control" placeholder="Your Username" name="username">
+                  <label for="username">Email</label>
+                  <input type="text" class="form-control" placeholder="Your Email" name="email">
                 </div>
                 <div class="form-group last mb-3">
                   <label for="password">Password</label>
@@ -67,10 +83,13 @@ if (isset($_POST['submit'])){
                 </div>
                 
                 <div class="d-sm-flex mb-5 align-items-center">
-  
-                  <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+
+                
+                </label>
+                <span class="ml-auto"><input type="submit" name="forgot" value="Forgot Password" class="forgot-pass"></a></span> 
                 </div>
 
+                
                 <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">
 
               </form>

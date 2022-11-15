@@ -2,16 +2,8 @@
 session_start();
 include 'connect.php';
 $msg = "";
-$id = $_SESSION['user_id'];
-if(!isset($_SESSION['user_id'])){
-  $_SESSION['msg'] = "You must login first";
-  header("location: login.php");
-}
-if(isset($_GET['logout'])){
-  session_destroy();
-  unset($_SESSION['id']);
-  header("location: login.php");
-}
+
+
 
 if (isset($_POST['save'])){
 
@@ -19,7 +11,7 @@ if (isset($_POST['save'])){
 
   $update_password = mysqli_real_escape_string($conn, md5($_POST['update_password']));
 
-  mysqli_query($conn, "UPDATE `customer` SET name = '$update_name', email = '$update_email', password = '$update_password' WHERE id = '$id'")
+  mysqli_query($conn, "UPDATE `customer` SET password = '$update_password' WHERE id = '$id'")
   or die("Query FAILED");
 
 
@@ -59,20 +51,13 @@ if (isset($_POST['save'])){
           <div class="col-md-6">
             <div class="form-block">
               <div class="text-center mb-5">
+              <?php echo $msg; ?>
               <h3><strong>Reset Password
               </strong></h3>
               <!-- <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p> -->
               </div>
-              <?php
-
-              $select = mysqli_query($conn, "SELECT * FROM `customer` WHERE  id = '$id'")or die('query failed');
-              if(mysqli_num_rows($select)>0){
-                $fetch = mysqli_fetch_assoc($select);
-
-              }
-
-              ?>
-              <form action="#" method="post">
+              
+              <form action="" method="post">
 			    <div class="form-group first">
                   
                 <div class="form-group last mb-3">
@@ -85,10 +70,12 @@ if (isset($_POST['save'])){
                 </div>
                 
 
-
-                <input type="submit" name ="save" value="Save" class="btn btn-block btn-primary">
-
               </form>
+              <form action="login.php" method="post">
+                <input type="submit" name ="save" value="Save" class="btn btn-block btn-primary">
+            </form>
+
+              
             </div>
           </div>
         </div>
