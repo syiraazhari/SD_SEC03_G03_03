@@ -88,7 +88,7 @@ if (isset($_POST['add'])){
                 
 
 
-                <input type="submit" name ="add" value="Add" class="btn btn-block btn-primary">
+                <input type="submit" name ="submit" value="submit" class="btn btn-block btn-primary">
 
               </form>
             </div>

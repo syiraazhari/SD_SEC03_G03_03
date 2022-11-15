@@ -87,7 +87,7 @@ $sql = "insert into volunteer (name, age, ic)
           <li><a href="Events.html">Events</a></li>
           <li><a href="things.html">Things To Do</a></li>
           <li><a href="plan.html">Plan Your Visit</a></li>
-          <li><a href="get.html">Get Involve</a></li>
+          <li><a href="get.php">Get Involve</a></li>
           <li><a href="profile.php">Profile</a></li>
           <li><a href="register.php">Register</a></li>
           
