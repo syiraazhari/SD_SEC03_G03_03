@@ -153,7 +153,7 @@ $sql = "insert into volunteer (name, age, ic)
             </div>
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
+          <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
                 Zoo Negara covers 110 acres of land which is situated only 5km from the city of Kuala Lumpur. Over the years, the zoo has transformed itself to an open concept zoo with over 90% of its animals being kept in spacious exhibits with landscape befitting its nature. We are working in making sure that the old zoo concept is changed entirely.
               </p>
@@ -161,7 +161,10 @@ $sql = "insert into volunteer (name, age, ic)
                 <li><i class="bi bi-check2-all"></i> We have a total of over 5137 specimen from 476 species of mammals, birds, reptiles, amphibians and fish.</li>
                 <li><i class="bi bi-check2-all"></i> To be one of the world’s premier zoological park and aquaria dedicated to conservation, recreation, education, training and research of various animal and plant species.</li>
               </ul>
+<<<<<<< Updated upstream
            
+=======
+>>>>>>> Stashed changes
 
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
@@ -320,7 +323,7 @@ $sql = "insert into volunteer (name, age, ic)
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/tiger.jpg" class="glightbox"><img src="assets/img/menu/tiger.jpg" class="menu-img img-fluid" alt=""></a>
-				<h4>Tigers</h4>
+				      <h4>Tigers</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -359,46 +362,46 @@ $sql = "insert into volunteer (name, age, ic)
           <div class="tab-pane fade" id="menu-breakfast">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Reptiles</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/saltwatercroc.jpg" class="glightbox"><img src="assets/img/menu/saltwatercroc.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Salt Water Crocodile</h4>
 
                 </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/africandwarfcroc.jpg" class="glightbox"><img src="assets/img/menu/africandwarfcroc.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>African Dwarf Crocodile</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/falsegharial.jpg" class="glightbox"><img src="assets/img/menu/falsegharial.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>False Gharial</h4>
  
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/tortoise.jpg" class="glightbox"><img src="assets/img/menu/tortoise.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aldabran Tortoise</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/python.jpg" class="glightbox"><img src="assets/img/menu/python.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Reticulated Pythons</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/anaconda.jpg" class="glightbox"><img src="assets/img/menu/anaconda.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Green Anaconda</h4>
 
               </div><!-- Menu Item -->
 
@@ -408,46 +411,46 @@ $sql = "insert into volunteer (name, age, ic)
           <div class="tab-pane fade" id="menu-lunch">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Fish</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/arowana.jpg" class="glightbox"><img src="assets/img/menu/arowana.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Arowana</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/arapaima.jpg" class="glightbox"><img src="assets/img/menu/arapaima.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Arapaima Gigas</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/redtail.jpg" class="glightbox"><img src="assets/img/menu/redtail.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Asian Red-Tailed Catfish</h4>
     
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/tinfoilbarb.jpeg" class="glightbox"><img src="assets/img/menu/tinfoilbarb.jpeg" class="menu-img img-fluid" alt=""></a>
+                <h4>Tinfoil Barb</h4>
 
                 </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/pangasius.jpg" class="glightbox"><img src="assets/img/menu/pangasius.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Pangasius Catfish</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/borneosucker.jpg" class="glightbox"><img src="assets/img/menu/borneosucker.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Borneo Sucker</h4>
 
               </div><!-- Menu Item -->
 
@@ -457,47 +460,47 @@ $sql = "insert into volunteer (name, age, ic)
           <div class="tab-pane fade" id="menu-dinner">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Birds</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/wrinkled.jfif" class="glightbox"><img src="assets/img/menu/wrinkled.jfif" class="menu-img img-fluid" alt=""></a>
+                <h4>Wrinkled Hornbill</h4>
 
         
               
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/stork.jpg" class="glightbox"><img src="assets/img/menu/stork.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Stork</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/ibis.jpg" class="glightbox"><img src="assets/img/menu/ibis.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Ibis</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/egret.jfif" class="glightbox"><img src="assets/img/menu/egret.jfif" class="menu-img img-fluid" alt=""></a>
+                <h4>Egret</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/swan.jpg" class="glightbox"><img src="assets/img/menu/swan.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Swan</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/pelican.jfif" class="glightbox"><img src="assets/img/menu/pelican.jfif" class="menu-img img-fluid" alt=""></a>
+                <h4>Pelican</h4>
 
               </div><!-- Menu Item -->
 
@@ -509,6 +512,120 @@ $sql = "insert into volunteer (name, age, ic)
       </div>
     </section><!-- End Menu Section -->
 
+<<<<<<< Updated upstream
+=======
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Google Reviews</h2>
+          <p>What Are They <span>Saying About Us</span></p>
+        </div>
+
+        <div class="slides-1 swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        We love this zoo! It is clean and well cared for, the animals seem quite content, good options are great! Definitely must see the panda exhibit! They are just so cute! The Reptile house is also so cool! See if you can spot the animal in each enclosure!
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Krista Townsend</h3>
+                      <h4>Local Guide</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Very neat and clean, The National Zoo of Malaysia. For RM 50 for a student or international worker with a valid permit, one can see the seagull show, the Panda Center and all the other animals the Zoo has to offer. One must go at 9 am in the morning and spend the whole day there in order to take the maximum advantage of one's money.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Mirasa Shahabuddin Junejo</h3>
+                      <h4>Local Guide</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        Very beautiful experience there, had fun with my kid. Place was clean and beautiful. Had a great time walking there, place was a little hot in the afternoon, but not too bad, bring an umbrella of the day is too hot. Animals were well taken care of, the latest attraction was the reptile house, we had the chance to hold snake and tortoises. Beautiful new addition to the zoo. Overall very nice experience. We Used klook  for discount for entrance fee.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>S Darma Raj</h3>
+                      <h4>Local Guide</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <div class="row gy-4 justify-content-center">
+                  <div class="col-lg-6">
+                    <div class="testimonial-content">
+                      <p>
+                        <i class="bi bi-quote quote-icon-left"></i>
+                        A great place for family outing. Animals are well kept. Place is clean and easy to move around. Panda conservation is a nice attraction. Don't missed the animal show. Check their schedule. Family package is recommended for small family and savings.
+                        <i class="bi bi-quote quote-icon-right"></i>
+                      </p>
+                      <h3>Max Pang</h3>
+                      <h4>Local Guide</h4>
+                      <div class="stars">
+                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-2 text-center">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
+                  </div>
+                </div>
+              </div>
+            </div><!-- End testimonial item -->
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+>>>>>>> Stashed changes
 
 
     <!-- ======= Events Section ======= -->

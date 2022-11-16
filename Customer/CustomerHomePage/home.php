@@ -311,55 +311,55 @@
             </div>
           </div><!-- End Starter Menu Content -->
 
-          <div class="tab-pane fade" id="menu-breakfast">
+            <div class="tab-pane fade" id="menu-breakfast">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Reptiles</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/saltwatercroc.jpg" class="glightbox"><img src="assets/img/menu/saltwatercroc.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Salt Water Crocodile</h4>
 
                 </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/africandwardcroc.jpg" class="glightbox"><img src="assets/img/menu/africandwardcroc.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>African Dwarf Crocodile</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/falsegharial.jpg" class="glightbox"><img src="assets/img/menu/falsegharial.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>False Gharial</h4>
  
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/tortoise.jpg" class="glightbox"><img src="assets/img/menu/tortoise.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aldabran Tortoise</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/pyhon.jpg" class="glightbox"><img src="assets/img/menu/pyhon.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Reticulated Pythons</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/anaconda.jpg" class="glightbox"><img src="assets/img/menu/anaconda.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Green Anaconda</h4>
 
               </div><!-- Menu Item -->
 
             </div>
           </div><!-- End Breakfast Menu Content -->
-
+          
           <div class="tab-pane fade" id="menu-lunch">
 
             <div class="tab-header text-center">
