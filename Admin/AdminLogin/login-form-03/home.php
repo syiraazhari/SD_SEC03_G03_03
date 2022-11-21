@@ -98,6 +98,8 @@ include 'connect.php';
 
   <main id="main">
 
+  <main id="main">
+
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
@@ -115,20 +117,16 @@ include 'connect.php';
             </div>
           </div>
           <div class="col-lg-5 d-flex align-items-end" data-aos="fade-up" data-aos-delay="300">
-            <div class="content ps-0 ps-lg-5">
+          <div class="content ps-0 ps-lg-5">
               <p class="fst-italic">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                magna aliqua.
+                Zoo Negara covers 110 acres of land which is situated only 5km from the city of Kuala Lumpur. Over the years, the zoo has transformed itself to an open concept zoo with over 90% of its animals being kept in spacious exhibits with landscape befitting its nature. We are working in making sure that the old zoo concept is changed entirely.
               </p>
               <ul>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+                <li><i class="bi bi-check2-all"></i> We have a total of over 5137 specimen from 476 species of mammals, birds, reptiles, amphibians and fish.</li>
+                <li><i class="bi bi-check2-all"></i> To be one of the world’s premier zoological park and aquaria dedicated to conservation, recreation, education, training and research of various animal and plant species.</li>
               </ul>
-              <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident
-              </p>
+
+
 
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
@@ -287,7 +285,7 @@ include 'connect.php';
 
               <div class="col-lg-4 menu-item">
                 <a href="assets/img/menu/tiger.jpg" class="glightbox"><img src="assets/img/menu/tiger.jpg" class="menu-img img-fluid" alt=""></a>
-				<h4>Tigers</h4>
+				      <h4>Tigers</h4>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
@@ -326,46 +324,46 @@ include 'connect.php';
           <div class="tab-pane fade" id="menu-breakfast">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Reptiles</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/saltwatercroc.jpg" class="glightbox"><img src="assets/img/menu/saltwatercroc.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Salt Water Crocodile</h4>
 
                 </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/africandwarfcroc.jpg" class="glightbox"><img src="assets/img/menu/africandwarfcroc.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>African Dwarf Crocodile</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/falsegharial.jpg" class="glightbox"><img src="assets/img/menu/falsegharial.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>False Gharial</h4>
  
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/tortoise.jpg" class="glightbox"><img src="assets/img/menu/tortoise.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Aldabran Tortoise</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/python.jpg" class="glightbox"><img src="assets/img/menu/python.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Reticulated Pythons</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/anaconda.jpg" class="glightbox"><img src="assets/img/menu/anaconda.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Green Anaconda</h4>
 
               </div><!-- Menu Item -->
 
@@ -375,46 +373,46 @@ include 'connect.php';
           <div class="tab-pane fade" id="menu-lunch">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Fish</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/arowana.jpg" class="glightbox"><img src="assets/img/menu/arowana.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Arowana</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/arapaima.jpg" class="glightbox"><img src="assets/img/menu/arapaima.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Arapaima Gigas</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/redtail.jpg" class="glightbox"><img src="assets/img/menu/redtail.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Asian Red-Tailed Catfish</h4>
     
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/tinfoilbarb.jpeg" class="glightbox"><img src="assets/img/menu/tinfoilbarb.jpeg" class="menu-img img-fluid" alt=""></a>
+                <h4>Tinfoil Barb</h4>
 
                 </p>
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/pangasius.jpg" class="glightbox"><img src="assets/img/menu/pangasius.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Pangasius Catfish</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/borneosucker.jpg" class="glightbox"><img src="assets/img/menu/borneosucker.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Borneo Sucker</h4>
 
               </div><!-- Menu Item -->
 
@@ -424,47 +422,47 @@ include 'connect.php';
           <div class="tab-pane fade" id="menu-dinner">
 
             <div class="tab-header text-center">
-              <p>Menu</p>
+              <p>Animal Classification</p>
               <h3>Birds</h3>
             </div>
 
             <div class="row gy-5">
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-1.png" class="glightbox"><img src="assets/img/menu/menu-item-1.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Magnam Tiste</h4>
+                <a href="assets/img/menu/wrinkled.jfif" class="glightbox"><img src="assets/img/menu/wrinkled.jfif" class="menu-img img-fluid" alt=""></a>
+                <h4>Wrinkled Hornbill</h4>
 
         
               
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-2.png" class="glightbox"><img src="assets/img/menu/menu-item-2.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Aut Luia</h4>
+                <a href="assets/img/menu/stork.jpg" class="glightbox"><img src="assets/img/menu/stork.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Stork</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-3.png" class="glightbox"><img src="assets/img/menu/menu-item-3.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Est Eligendi</h4>
+                <a href="assets/img/menu/ibis.jpg" class="glightbox"><img src="assets/img/menu/ibis.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Ibis</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-4.png" class="glightbox"><img src="assets/img/menu/menu-item-4.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/egret.jfif" class="glightbox"><img src="assets/img/menu/egret.jfif" class="menu-img img-fluid" alt=""></a>
+                <h4>Egret</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-5.png" class="glightbox"><img src="assets/img/menu/menu-item-5.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Eos Luibusdam</h4>
+                <a href="assets/img/menu/swan.jpg" class="glightbox"><img src="assets/img/menu/swan.jpg" class="menu-img img-fluid" alt=""></a>
+                <h4>Swan</h4>
 
               </div><!-- Menu Item -->
 
               <div class="col-lg-4 menu-item">
-                <a href="assets/img/menu/menu-item-6.png" class="glightbox"><img src="assets/img/menu/menu-item-6.png" class="menu-img img-fluid" alt=""></a>
-                <h4>Laboriosam Direva</h4>
+                <a href="assets/img/menu/pelican.jfif" class="glightbox"><img src="assets/img/menu/pelican.jfif" class="menu-img img-fluid" alt=""></a>
+                <h4>Pelican</h4>
 
               </div><!-- Menu Item -->
 
@@ -481,7 +479,7 @@ include 'connect.php';
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Testimonials</h2>
+          <h2>Google Reviews</h2>
           <p>What Are They <span>Saying About Us</span></p>
         </div>
 
@@ -495,18 +493,18 @@ include 'connect.php';
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                        We love this zoo! It is clean and well cared for, the animals seem quite content, good options are great! Definitely must see the panda exhibit! They are just so cute! The Reptile house is also so cool! See if you can spot the animal in each enclosure!
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Saul Goodman</h3>
-                      <h4>Ceo &amp; Founder</h4>
+                      <h3>Krista Townsend</h3>
+                      <h4>Local Guide</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-1.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -519,18 +517,18 @@ include 'connect.php';
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                        Very neat and clean, The National Zoo of Malaysia. For RM 50 for a student or international worker with a valid permit, one can see the seagull show, the Panda Center and all the other animals the Zoo has to offer. One must go at 9 am in the morning and spend the whole day there in order to take the maximum advantage of one's money.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Sara Wilsson</h3>
-                      <h4>Designer</h4>
+                      <h3>Mirasa Shahabuddin Junejo</h3>
+                      <h4>Local Guide</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-2.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -543,18 +541,18 @@ include 'connect.php';
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                        Very beautiful experience there, had fun with my kid. Place was clean and beautiful. Had a great time walking there, place was a little hot in the afternoon, but not too bad, bring an umbrella of the day is too hot. Animals were well taken care of, the latest attraction was the reptile house, we had the chance to hold snake and tortoises. Beautiful new addition to the zoo. Overall very nice experience. We Used klook  for discount for entrance fee.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>Jena Karlis</h3>
-                      <h4>Store Owner</h4>
+                      <h3>S Darma Raj</h3>
+                      <h4>Local Guide</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-3.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -567,18 +565,18 @@ include 'connect.php';
                     <div class="testimonial-content">
                       <p>
                         <i class="bi bi-quote quote-icon-left"></i>
-                        Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                        A great place for family outing. Animals are well kept. Place is clean and easy to move around. Panda conservation is a nice attraction. Don't missed the animal show. Check their schedule. Family package is recommended for small family and savings.
                         <i class="bi bi-quote quote-icon-right"></i>
                       </p>
-                      <h3>John Larson</h3>
-                      <h4>Entrepreneur</h4>
+                      <h3>Max Pang</h3>
+                      <h4>Local Guide</h4>
                       <div class="stars">
                         <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
                       </div>
                     </div>
                   </div>
                   <div class="col-lg-2 text-center">
-                    <img src="assets/img/testimonials/testimonials-4.jpg" class="img-fluid testimonial-img" alt="">
+                    <img src="assets/img/testimonials/testimonials.jpg" class="img-fluid testimonial-img" alt="">
                   </div>
                 </div>
               </div>
@@ -588,8 +586,6 @@ include 'connect.php';
           <div class="swiper-pagination"></div>
         </div>
 
-      </div>
-    </section><!-- End Testimonials Section -->
 
     <!-- ======= Events Section ======= -->
     <section id="events" class="events">
@@ -636,64 +632,7 @@ include 'connect.php';
    
     
 
-    <!-- ======= Book A TicketcSection ======= -->
-    <section id="book-a-table" class="book-a-table">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-header">
-          <h2>Book A Ticket</h2>
-          <p>Book <span>A Visit</span> With Us</p>
-        </div>
-
-        <div class="row g-0">
-
-          <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
-
-          <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="phone" id="phone" placeholder="Your Phone" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="date" class="form-control" id="date" placeholder="Date" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" class="form-control" name="time" id="time" placeholder="Time" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent.</div>
-              </div>
-              <div class="text-center"><button type="submit">Book a Ticket</button></div>
-            </form>
-          </div><!-- End Reservation Form -->
-
-        </div>
-
-      </div>
-    </section><!-- End Book A Table Section -->
+   
 
     <!-- ======= Gallery Section ======= -->
     <section id="gallery" class="gallery section-bg">
@@ -780,44 +719,11 @@ include 'connect.php';
 
         </div>
 
-        <div class="section-header">
-          <br><br>
-          <h2>Volunteer Form</h2>
-          <p>Be a volunteer!</p>
-        </div>
-
-
-        <form action="forms/contact.php" method="post" role="form" class="php-email-form p-3 p-md-4">
-          <div class="row">
-            <div class="col-xl-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
-            </div>
-            <div class="col-xl-6 form-group">
-              <input type="text" class="form-control" name="age" id="age" placeholder="Your Age" required>
-            </div>
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" name="ic" id="ic" placeholder="Your IC number" required>
-          </div>
-         
-          <div class="my-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Your application has been sent. Thank you!</div>
-          </div>
-          <div class="text-center"><button type="submit">Send Application</button></div>
-          
-        </form>
+       
         <!--End Contact Form -->
-
-
 
       </div>
     </section><!-- End Contact Section -->
-
-  <section id="profile" class="profile"><!-- Profile Section -->
-    
-
 
   </main><!-- End #main -->
 

@@ -113,8 +113,8 @@ if (isset($_POST['submit'])){
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Be A Volunteer</h2>
-          <p>Become <span>Our</span> Volunteer</p>
+          <h2>Book Your Ticket</h2>
+          <p>Book <span>Your</span> Ticket</p>
         </div>
 
         <div class="row g-0">
