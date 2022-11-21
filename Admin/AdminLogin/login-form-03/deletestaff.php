@@ -18,5 +18,4 @@ if (isset($_GET['deleteid']))
     }
 
 }           
-
-?>
+                                                                                                                      

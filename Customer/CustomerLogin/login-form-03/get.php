@@ -120,12 +120,13 @@ $sql = "insert into `volunteer` (name, age, ic)
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
+            
             <form action="#" method="post">
 
            
             
 
-<div class="form-group first">
+<div class="center">
     <label for="name">Name</label>
     <input type="text" name="name" class="form-control">
   </div>
@@ -137,7 +138,7 @@ $sql = "insert into `volunteer` (name, age, ic)
   </div>
   <br>
   <div class="form-group first">
-    <label for="ic">    IC</label>
+    <label for="ic">  IC</label>
     <input type="text" name="ic" class="form-control">
   </div>
  

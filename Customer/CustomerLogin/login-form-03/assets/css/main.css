@@ -1702,3 +1702,25 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.image {
+  min-height: 100vh;
+  background-image: url(http://3.bp.blogspot.com/-FXxGHxdYb50/VSqK_S9PtXI/AAAAAAAABjs/2LdS6IQy1g4/s1600/P1040387%2B-%2BCopy.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+
+.content {
+  background: white;
+  padding: 15px;
+  border-radius: 3px;
+}

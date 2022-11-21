@@ -534,4 +534,12 @@ input[type=checkbox]:not(old):checked + label > span:before {
   .signup-content {
     padding: 50px 25px; } }
 
+    .center {
+      margin: auto;
+      width: 50%;
+      border: 3px solid green;
+      padding: 10px;
+    }
+   
+
 /*# sourceMappingURL=style.css.map */

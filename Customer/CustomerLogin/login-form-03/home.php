@@ -33,7 +33,7 @@ $sql = "insert into volunteer (name, age, ic)
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Yummy Bootstrap Template - Index</title>
+  <title>Zoo Negara</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -98,7 +98,15 @@ $sql = "insert into volunteer (name, age, ic)
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
+<<<<<<< Updated upstream
 
+=======
+    
+      
+      <a class="btn-login" href="login.php">Log In</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+>>>>>>> Stashed changes
       
 	  
 
@@ -155,10 +163,8 @@ $sql = "insert into volunteer (name, age, ic)
                 <li><i class="bi bi-check2-all"></i> We have a total of over 5137 specimen from 476 species of mammals, birds, reptiles, amphibians and fish.</li>
                 <li><i class="bi bi-check2-all"></i> To be one of the world’s premier zoological park and aquaria dedicated to conservation, recreation, education, training and research of various animal and plant species.</li>
               </ul>
-<<<<<<< Updated upstream
-           
-=======
->>>>>>> Stashed changes
+
+
 
               <div class="position-relative mt-4">
                 <img src="assets/img/about-2.jpg" class="img-fluid" alt="">
@@ -506,8 +512,6 @@ $sql = "insert into volunteer (name, age, ic)
       </div>
     </section><!-- End Menu Section -->
 
-<<<<<<< Updated upstream
-=======
     <!-- ======= Testimonials Section ======= -->
     <section id="testimonials" class="testimonials section-bg">
       <div class="container" data-aos="fade-up">
@@ -619,7 +623,6 @@ $sql = "insert into volunteer (name, age, ic)
           </div>
           <div class="swiper-pagination"></div>
         </div>
->>>>>>> Stashed changes
 
 
     <!-- ======= Events Section ======= -->

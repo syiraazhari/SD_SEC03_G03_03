@@ -44,16 +44,19 @@ if (isset($_POST['update'])){
     
     <!-- Style -->
     <link rel="stylesheet" href="css/style.css">
+    
 
     <title>Profile Page</title>
   </head>
   <body style="background-color:#C3E79B;">
+  
   
 
   <div class="half">
     <div class="bg order-1 order-md-2">
   </div>
     <div class="contents order-2 order-md-1">
+      
 
       <div class="container">
         <div class="row align-items-center justify-content-center">
@@ -74,7 +77,7 @@ if (isset($_POST['update'])){
 
               ?>
               <form action="" method="post">
-			    <div class="form-group first">
+			        <div class="form-group first">
                   <label for="username">Name:</label>
                   <?php echo $fetch['name']; ?>
                   
