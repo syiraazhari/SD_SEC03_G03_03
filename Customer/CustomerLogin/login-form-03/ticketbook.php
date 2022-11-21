@@ -1,24 +1,26 @@
 <?php
 session_start();
 include 'connect.php';
-
+$id = $_SESSION['user_id'];
+if(!isset($_SESSION['user_id'])){
+  $_SESSION['msg'] = "You must login first";
+  header("location: login.php");
+}
 
 if (isset($_POST['submit'])){
 
-  $name = mysqli_real_escape_string($conn, $_POST['name']);
-  $age = mysqli_real_escape_string($conn, $_POST['age']);
-  $ic = mysqli_real_escape_string($conn, $_POST['ic']);
+  $numTicketAdult = mysqli_real_escape_string($conn, $_POST['numTicketAdult']);
+  $numTicketChild = mysqli_real_escape_string($conn, $_POST['numTicketChild']);
 
-$sql = "insert into `volunteer` (name, age, ic)
-          values('$name', '$age' , '$ic')";
+
+  $sql = "UPDATE `customer` SET numTicketAdult = '$numTicketAdult', numTicketChild = '$numTicketChild' WHERE id = '$id'";
+ 
 
   $result = mysqli_query($conn, $sql);
 
   if ($result)
   {
-     
-    echo '<script>alert("Your application has been submitted")</script>';
-
+    header("location: bookingconfirmation.php");
   }
   else 
   {
@@ -30,11 +32,6 @@ $sql = "insert into `volunteer` (name, age, ic)
 
 <!DOCTYPE html>
 <html lang="en">
-<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css">
 
 <head>
   <meta charset="utf-8">
@@ -69,11 +66,6 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
-
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
 </head>
 
 <body>
@@ -113,7 +105,7 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
   </header><!-- End Header -->
 
 
-   
+
     
 
     <!-- ======= Book A TicketcSection ======= -->
@@ -121,8 +113,8 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
       <div class="container" data-aos="fade-up">
 
         <div class="section-header">
-          <h2>Book A Ticket</h2>
-          <p>Book <span>A Visit</span> With Us</p>
+          <h2>Be A Volunteer</h2>
+          <p>Become <span>Our</span> Volunteer</p>
         </div>
 
         <div class="row g-0">
@@ -130,126 +122,48 @@ href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-              <div class="row gy-4">
-                <div class="col-lg-4 col-md-6">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
-                  <div class="validate"></div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email">
-                  <div class="validate"></div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6">
-                  <input type="number" class="form-control" name="people" id="people" placeholder="# of people" data-rule="minlen:1" data-msg="Please enter at least 1 chars">
-                  <div class="validate"></div>
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
-                <div class="validate"></div>
-              </div>
-              <div class="mb-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your booking request was sent.</div>
-              </div>
-              <div>
-              <input id=demoInput type=number min=0 max=100>
-              <button onclick="increment()">+</button>
-              <button onclick="decrement()">-</button>
-              </div>
-              <script>
-              function increment() {
-                document.getElementById('demoInput').stepUp();
-              }
-              function decrement() {
-                document.getElementById('demoInput').stepDown();
-               }
-              </script>
-              
-              <?php 
-              $id = $_SESSION['user_id'];
-    		      $sql = "SELECT * FROM customer WHERE id = '$id'" ;
-              include 'connect.php';
-    		      $result = mysqli_query($conn,$sql);
-    		      $i = 1;
-    		      while($row = mysqli_fetch_array($result)) 
-    		      {
-            	?>
-    	        <tr>
-	    	      <td><?php echo $i; ?></td>
-	          	<td><?php echo $row['name']; ?></td>
-	          	
-	          	<td><?php echo $row['email']; ?></td>
-	          	<td>
-
-	    	      <button type="button" class="btn btn-info" data-toggle="modal" data-target="#myModal<?php echo $row['id'] ?>">View</button>
-
-
-
-	    	      </td>
-    	      </tr>
-
-            <style>
-              @media screen and (min-width: 676px) {
-                  .modal-dialog {
-                    max-width: 1500px; /* New width for default modal */
-                    height: 400px;
-                  }
-                  .modal-backdrop {
-                    z-index: -1;
-                  }
-                  .modal-ku {
-                    width: 1750px;
-                    margin: auto;
-                  }
-              }
-            </style>
-
-            <div id="myModal<?php echo $row['id'] ?>" class="modal fade" role="dialog">
-            <div class="modal-dialog modal-ku">
-                <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Details</h4>
-                  </div>
-                  <div class="modal-body">
-                  <h3>Name : <?php echo $row['name']; ?></h3>
-                  
-                  <h3>Email : <?php echo $row['email']; ?></h3>
-                  <br><br><br><br><br><br>
-                  
-                  </div>
-              </div>
-            </div>
-          </div>
-          
-        
-
-    	<?php 
-    		$i++;
-    		}
-    	?>
-              
-            </form>
-          
             
+            <form action="#" method="post">
+
+           
+            
+
+<div class="form-group first">
+    <label for="name">Number of ticket for adults</label>
+    <input type="text" name="numTicketAdult" class="form-control">
+  </div>
+  <br>
+
+  <div class="form-group first">
+    <label for="age">Number of ticket for children</label>
+    <input type="text" name="numTicketChild"class="form-control">
+  </div>
+  <br>
   
+ 
+
+
+
+
+  <br><input type="submit" name ="submit" value="Submit" class="btn btn-block btn-primary" >
+ 
+
+
+</form>
+           
+
 
           </div><!-- End Reservation Form -->
 
         </div>
 
       </div>
+
+      
+
     </section><!-- End Book A Table Section -->
-        <script>
-          function myPopup(){
-
-          }
-        </script>
-
+ 
+    
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
 

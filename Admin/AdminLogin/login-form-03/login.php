@@ -12,7 +12,7 @@ require 'vendor/autoload.php';
 if (isset($_POST['submit'])){ 
 
   $email = mysqli_real_escape_string($conn , $_POST['email']);
-  $password = mysqli_real_escape_string($conn , md5($_POST['password']));
+  $password = mysqli_real_escape_string($conn , $_POST['password']);
 
   $select = mysqli_query($conn, "SELECT * FROM `admin` WHERE email = '$email' AND password = '$password'") or die ('query failed');
   if(mysqli_num_rows($select)> 0)
