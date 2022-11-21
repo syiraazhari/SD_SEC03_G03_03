@@ -2,7 +2,7 @@
 $hostname = "localhost"; $user = "root"; $pass = ""; $db = "zooproject";
 
 //create/open connection
-$conn = mysqli_connect($hostname,$user,$pass,$db);
+$conn = mysqli_connect($hostname,$user,$pass,$db,);
 
 //check connection
 if($conn){

@@ -94,17 +94,11 @@ $sql = "insert into volunteer (name, age, ic)
         </ul>
       </nav><!-- .navbar -->
 	  
-	    <a class="btn-book-a-table" href="#book-a-table">Book a Ticket</a>
+	    <a class="btn-book-a-table" href="ticketbook.php">Book a Ticket</a>
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
 
-    	<a class="btn-register" href="C:\Users\HP\Desktop\projeksd\Guest\GuestRegister\colorlib-regform-8\index.html">Register</a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
-      
-      <a class="btn-login" href="C:\Users\HP\Desktop\projeksd\Guest\GuestLogin\login-form-03\loginindex.html">Log In</a>
-      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
       
 	  
 
@@ -570,7 +564,7 @@ $sql = "insert into volunteer (name, age, ic)
           <div class="col-lg-4 reservation-img" style="background-image: url(assets/img/reservation.jpg);" data-aos="zoom-out" data-aos-delay="200"></div>
 
           <div class="col-lg-8 d-flex align-items-center reservation-form-bg">
-            <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <form action="" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
               <div class="row gy-4">
                 <div class="col-lg-4 col-md-6">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">

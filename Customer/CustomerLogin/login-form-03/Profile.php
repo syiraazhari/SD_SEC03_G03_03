@@ -10,7 +10,7 @@ if(!isset($_SESSION['user_id'])){
 if(isset($_GET['logout'])){
   session_destroy();
   unset($_SESSION['id']);
-  header("location: login.php");
+  header("location: home.php");
 }
 
 if (isset($_POST['update'])){
