@@ -14,12 +14,12 @@ if(isset($_GET['logout'])){
   header("location: login.php");
 }
 
-if (isset($_POST['Checkout'])){
+if (isset($_POST['calculate'])){
 
 
     $numTicketAdult = $_POST['numTicketAdult'];
 $numTicketChild = $_POST['numTicketChild'];
-$totalticketPrice = $_POST['totalticketPrice'];
+
 $name = $_POST['name'];
 
 
@@ -104,16 +104,16 @@ $result = mysqli_query($conn, $sql);
                   <label for="username">No of tickets for Child</label>
                   <input type="text" name="numTicketChild" value ="<?php echo $fetch['numTicketChild']; ?>" class="form-control">
                 </div>
-                <div class="form-group first">
-                  <label for="username">Total </label>
-                  <?php echo "Ticket price = " .$totalticketPrice; ?>
+               
 
                    
                 </div>
-
-                
+                <input type="submit" name ="calculate" value="Calculate" />
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Checkout</button>
 
+
+
+        
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -130,14 +130,14 @@ $result = mysqli_query($conn, $sql);
       <?php echo"Name: " .$name ?><br>
       <?php echo"Quantity of Adult Ticket: " .$numTicketAdult?><br>
       <?php echo"Quantity of Child Ticket:  " .$numTicketChild ?><br>
-        <?php echo"Total ticket price " .$totalticketPrice ?>
+        <?php echo"Total ticket price: " .$totalticketPrice ?>
 
 
 
 
       </div>
       <div class="modal-footer">
-      <form action="stripe/index.php">
+      <form action="index.php">
     <input type="submit" value="Pay" />
 </form>
       </div>
