@@ -99,9 +99,11 @@ if (isset($_POST['update'])){
                 <span class="ml-auto">
                  
                 
-                <div class="d-sm-flex mb-5 align-items-center">
+                
                 <a href="editprofile.php"class="d-sm-flex mb-5 align-items-center" >Edit Profile</a>
-                </div>
+             
+               
+                <a href="paymenthistory.php"class="d-sm-flex mb-5 align-items-center" >View Payment History</a>
 
                
 

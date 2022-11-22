@@ -92,8 +92,10 @@ if (isset($_POST['save'])){
                 </div>
                 
 
-
+                
                 <input type="submit" name ="save" value="Save" class="btn btn-block btn-primary">
+                <a href = "home.php"> Back to home </a>
+            
 
               </form>
             </div>

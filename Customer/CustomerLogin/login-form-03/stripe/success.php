@@ -37,7 +37,7 @@ $result = mysqli_query($db_conn,$sql);
 			<h4>Receipt</h4>
 			<p><b>Name:</b> <?php echo  $fetch['name']; ?></p>
 			<p><b>Number of Adult Ticket:</b> <?php echo  $fetch['numTicketAdult']; ?></p>
-			<p><b>Number of Child Ticket::</b> <?php echo  $fetch['numTicketChild']; ?></p>
+			<p><b>Number of Child Ticket:</b> <?php echo  $fetch['numTicketChild']; ?></p>
 			<p><b>Total:</b> <?php echo  $fetch['totalticketPrice']; ?></p>
 				
 		
