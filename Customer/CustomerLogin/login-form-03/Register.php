@@ -10,7 +10,7 @@ require 'vendor/autoload.php';
 
 if(isset($_POST['submit'])){
     $email = mysqli_real_escape_string($conn , $_POST['email']);
-    $password = mysqli_real_escape_string($conn ,($_POST['password']));
+    $password = mysqli_real_escape_string($conn ,md5($_POST['password']));
     $name = mysqli_real_escape_string($conn , $_POST['name']);
     
 

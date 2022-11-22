@@ -60,7 +60,7 @@ include 'connect.php';
           <li><a href="MeetOurFamily.html">Meet Our Family</a></li>
           <li><a href="Events.html">Events</a></li>
           <li><a href="things.html">Things To Do</a></li>
-          <li><a href="donation.html">Donation History</a></li>
+         
           <li><a href="volunteer.php">Volunteer List</a></li>
           <li><a href="profile.php">Profile</a></li>
           

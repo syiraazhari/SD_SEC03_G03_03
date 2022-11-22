@@ -2,34 +2,40 @@
 // Include configuration file  
 require_once 'config.php'; 
 include 'dbConnect.php';
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-<title> Stripe Checkout in PHP by codeat21.com</title>
+<title> Checkout </title>
 <meta charset="utf-8">
 <!-- Stylesheet file -->
 <link href="css/style.css" rel="stylesheet">
 <!-- Stripe JavaScript library -->
+
 <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body class="App">
-	<h1>How to Integrate Stripe Payment Gateway in PHP</h1>
+	<h1>Payment Gateway</h1>
 	<div class="wrapper">
         <!-- Display errors returned by checkout session -->
 		<div id="paymentResponse"></div>
 		<?php 
 			$results = mysqli_query($db_conn,"SELECT * FROM products where status=1");
-			$row = mysqli_fetch_array($results,MYSQLI_ASSOC);
+			
+            while($row=mysqli_fetch_array($results))
+            {  $product_id=$row[0];  $name=$row[1];  $price=$row[2];  $status=$row[3];  }   
 		?>
 			<div class="col__box">
-			  <h5><?php echo $row['name']; ?></h5>
-				<h6>Price: <span> $<?php echo $row['price']; ?> </span> </h6>
+			  <h5><?php echo $name; ?></h5>
+				<h6>Price: <span> RM<?php echo $price; ?> </span> </h6>
 			
-				<!-- Buy button -->
+				<form action="stripe_charge.php"  method = "post">
 				<div id="buynow">
-					<button class="btn__default" id="payButton"> Buy Now </button>
+					<button class="btn__default" name="payButton" id="payButton"> Buy Now </button>
 				</div>
+</form>
 			</div>
 	</div>		
 <script>
@@ -44,10 +50,10 @@ var createCheckoutSession = function (stripe) {
         },
         body: JSON.stringify({
             checkoutSession: 1,
-			Name:"<?php echo $row['name']; ?>",
-			ID:"<?php echo $row['id']; ?>",
-			Price:"<?php echo $row['price']; ?>",
-			Currency:"<?php echo $row['currency']; ?>",
+			Name:"<?php echo $name; ?>",
+			ID:"<?php echo $product_id; ?>",
+			Price:"<?php echo $price; ?>",
+			Currency:"myr",
         }),
     }).then(function (result) {
         return result.json();

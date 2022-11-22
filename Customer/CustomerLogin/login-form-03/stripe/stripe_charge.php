@@ -45,10 +45,10 @@ if(!empty($request->checkoutSession)){
                     'currency' => $currency,
                 ],
                 'quantity' => 1,
-                'description' => $productName,
+                //'description' => $productName,
             ]],
             'mode' => 'payment',
-            'success_url' => STRIPE_SUCCESS_URL.'?session_id={CHECKOUT_SESSION_ID}&getID='.$productID,
+            'success_url' => STRIPE_SUCCESS_URL,
             'cancel_url' => STRIPE_CANCEL_URL,
         ]);
     }catch(Exception $e) { 

@@ -48,10 +48,10 @@ if (isset($_POST['update'])){
 
     <title>Profile Page</title>
   </head>
-  <body style="background-color:#C3E79B">s
+
   
 
-  <div class="half" style="background-color:#C3E79B">
+ 
     <div class="bg order-1 order-md-2" style="background-image: url('back.jpg')";></div>
   <div class="half">
   <div class="bg order-1 order-md-2" style="background-image: url('http://3.bp.blogspot.com/-FXxGHxdYb50/VSqK_S9PtXI/AAAAAAAABjs/2LdS6IQy1g4/s1600/P1040387%2B-%2BCopy.JPG');"></div>
@@ -105,7 +105,7 @@ if (isset($_POST['update'])){
                 <div class="d-sm-flex mb-5 align-items-center">
                 <a href="editprofile.php"class="d-sm-flex mb-5 align-items-center" >Edit Profile</a>
                 </div>
-                <a href="Ticketsales.html"class="btn btn-block btn-primary" >View Ticket Sales</a>
+                <a href="Ticketsales.php"class="btn btn-block btn-primary" >View Ticket Sales</a>
                  
                
 

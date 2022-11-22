@@ -37,6 +37,19 @@ $sql = "UPDATE `customer` SET totalticketPrice = '$totalticketPrice', numTicketA
 $result = mysqli_query($conn, $sql); 
 
 
+
+}
+
+
+if (isset($_POST['pay'])){
+
+    $totalticketPrice= $_POST['totalticketPrice'];
+    $sql = "UPDATE `products` SET price = '$totalticketPrice' WHERE id = 1 ";
+    $result = mysqli_query($conn, $sql); 
+
+    header("location: stripe/index.php");
+    
+
 }
 
 
@@ -104,10 +117,15 @@ $result = mysqli_query($conn, $sql);
                   <label for="username">No of tickets for Child</label>
                   <input type="text" name="numTicketChild" value ="<?php echo $fetch['numTicketChild']; ?>" class="form-control">
                 </div>
-               
 
+                
+                <div class="form-group first">
+                <label for="username">Total</label>
+                  <input type="text" name="totalticketPrice" value ="<?php echo $fetch['totalticketPrice']; ?>" class="form-control">
+                </div>
                    
                 </div>
+                
                 <input type="submit" name ="calculate" value="Calculate" />
                 <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Checkout</button>
 
@@ -138,7 +156,7 @@ $result = mysqli_query($conn, $sql);
       </div>
       <div class="modal-footer">
       <form action="index.php">
-    <input type="submit" value="Pay" />
+    <input type="submit" name="pay" value="Pay" />
 </form>
       </div>
     </div>
