@@ -45,6 +45,7 @@ $result = mysqli_query($db_conn,$sql);
 		
 		<a href="index.php" class="btn-link">Back to Product Page</a>
         <a href="http://localhost//masTER%20PROJECT%20SD/Customer/CustomerLogin/login-form-03/home.php" class="btn-link">Back to Home</a>
+			<!--<a href="http://18.222.181.248/dashboard//masTER%20PROJECT%20SD/Customer/CustomerLogin/login-form-03/home.php" class="btn-link">Back to Home</a>-->
 	</div>
     
 </body>

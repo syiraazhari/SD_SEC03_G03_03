@@ -55,7 +55,7 @@ if(isset($_POST['submit'])){
 
         $mail->Subject = 'Password Reset';
         $mail->Body    = '<p>Your password reset link is: <b style="font-size: 10px;"> http://localhost/master%20project%20sd/Staff/StaffLogin/login-form-03/forgot.php</b></p>';
-
+        //$mail->Body    = '<p>Your password reset link is: <b style="font-size: 10px;"> http://18.222.181.248/dashboard/master%20project%20sd/Staff/StaffLogin/login-form-03/forgot.php</b></p>';
         $mail->send();
         // echo 'Message has been sent';
 

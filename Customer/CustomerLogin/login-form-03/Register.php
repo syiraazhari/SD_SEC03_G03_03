@@ -55,6 +55,7 @@ if(isset($_POST['submit'])){
 
         $mail->Subject = 'Email verification';
         $mail->Body    = '<p>Your verification link is: <b style="font-size: 10px;"> http://localhost/master%20project%20sd/Customer/CustomerLogin/login-form-03/login.php</b></p>';
+           // $mail->Body    = '<p>Your verification link is: <b style="font-size: 10px;"> http://18.222.181.248/dashboard/master%20project%20sd/Customer/CustomerLogin/login-form-03/login.php</b></p>';
 
         $mail->send();
         // echo 'Message has been sent';
