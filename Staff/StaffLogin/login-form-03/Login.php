@@ -70,7 +70,7 @@ if (isset($_POST['submit'])){
                  
                   
                   </label>
-                  <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span> 
+                  <span class="ml-auto"><a href="forgotEmail.php" class="forgot-pass">Forgot Password</a></span> 
                 </div>
 
                 <input type="submit" name="submit" value="Log In" class="btn btn-block btn-primary">

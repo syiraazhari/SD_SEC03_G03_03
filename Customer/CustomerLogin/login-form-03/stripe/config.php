@@ -7,7 +7,7 @@
 @define('STRIPE_PUBLISHABLE_KEY', 'pk_test_51M6QmYGIQmKFxol0gf5jwbUJfPfadcApazxqW3KLHAsVBUAxvCPgWo5p7EqeRfalYOmHTMn0Fp7h9lHR4us4QpMK0080KUaVpX'); 
 
 @define('STRIPE_SUCCESS_URL', 'http://localhost//masTER%20PROJECT%20SD/Customer/CustomerLogin/login-form-03/stripe/success.php'); 
-@define('STRIPE_CANCEL_URL', 'http://localhost/stripe/cancel.php'); 
+@define('STRIPE_CANCEL_URL', 'http://localhost/stripe/cancel.php');
 
 // Database configuration   
 define('DB_HOST', 'localhost');  

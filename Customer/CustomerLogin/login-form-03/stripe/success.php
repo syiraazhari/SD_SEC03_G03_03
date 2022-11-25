@@ -35,6 +35,7 @@ $result = mysqli_query($db_conn,$sql);
 	<div class="wrapper">
     <h3>Payment Successful</h3>
 			<h4>Receipt</h4>
+			<p><b>Ticket Number:</b> <?php echo  $fetch['id']; ?></p>
 			<p><b>Name:</b> <?php echo  $fetch['name']; ?></p>
 			<p><b>Number of Adult Ticket:</b> <?php echo  $fetch['numTicketAdult']; ?></p>
 			<p><b>Number of Child Ticket:</b> <?php echo  $fetch['numTicketChild']; ?></p>

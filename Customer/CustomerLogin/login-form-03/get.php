@@ -126,7 +126,7 @@ $sql = "insert into `volunteer` (name, age, ic)
            
             
 
-<div class="center">
+<div class="form-group first">
     <label for="name">Name</label>
     <input type="text" name="name" class="form-control">
   </div>

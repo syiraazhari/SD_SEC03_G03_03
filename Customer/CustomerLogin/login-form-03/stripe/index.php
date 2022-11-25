@@ -13,7 +13,6 @@ include 'dbConnect.php';
 <!-- Stylesheet file -->
 <link href="css/style.css" rel="stylesheet">
 <!-- Stripe JavaScript library -->
-
 <script src="https://js.stripe.com/v3/"></script>
 </head>
 <body class="App">
